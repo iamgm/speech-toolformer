@@ -22,22 +22,22 @@ coverage.xml
 .pytest_cache/
 
 # Датасеты и большие файлы
-data/
-*.zip
+# data/
+# *.zip
 *.gz
 *.bz2
 *.tar.gz
 *.7z
 *.rar
 *.csv
-*.jsonl
+# *.jsonl
 *.parquet
 *.h5
 *.pkl
 *.feather
 audio_dataset.zip
-test_dataset.jsonl
-train_dataset.jsonl
+# test_dataset.jsonl
+# train_dataset.jsonl
 
 # Модели и чекпоинты
 models/
