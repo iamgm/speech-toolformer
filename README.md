@@ -2,7 +2,7 @@
 
 > **Интеллектуальный ассистент для "бесшовной" работы с текстом, расширяющий возможности стандартного ввода в любой среде Windows.**
 
-![Demo](docs/demo.gif)
+![Demo](demo/gif_demo_2.gif)
 *(Вставьте сюда GIF с демонстрацией работы: Выделение текста -> F8 -> Голосовая команда -> Результат)*
 
 ---
@@ -82,7 +82,7 @@ graph TD
 ### 1. Клонирование и зависимости
 
 ```bash
-git clone https://github.com/your-username/magic-paste.git
+git clone https://github.com/iamgm/magic-paste.git
 cd magic-paste
 
 # Создание виртуального окружения
@@ -103,8 +103,8 @@ pip install -r requirements.txt
 
 2. **Модели (Hugging Face):**
     - Создайте папку `models/`.
-    - Скачайте [Gemma-3n-4B-It-GGUF](https://huggingface.co/) (рекомендуется Q4_K_M). Переименуйте в `model.gguf`.
-    - *(Опционально)* Для Native Audio скачайте проектор `mmproj-model-f16.gguf`.
+    - Скачайте [Gemma-3n-4B-It-GGUF](https://huggingface.co/Iamgm/magic-paste-gemma-3n-4b).
+    - *(Экспериментальная опция)* Для Gemma ASR скачайте проектор `mmproj-model-f16.gguf`.
 
 ### 3. Конфигурация
 
