@@ -1,0 +1,46 @@
+app:
+  name: "Magic Paste"
+  hotkey: "f8"
+  paste_delay: 0.1 # уже не использется
+
+llm:
+  model_path: "models/gemma_3n_q4_k_m.gguf"
+  context_size: 4096
+  gpu_layers: 99
+  threads: 4
+  cache_prompt: true
+
+stt:
+  # "gemma" или "whisper"
+  provider: "whisper" 
+
+  whisper:
+    model_size: "small" # tiny, base, small, medium, ... 
+    device: "cuda" # cpu
+
+  gemma:
+    # путь к проектору - обязателен для работы ASR в Gemma
+    mmproj_path: "models/mmproj_gemma_3n_f16.gguf"
+
+tts:
+  # edge или silero (локально)
+  provider: "silero" 
+  
+  edge:
+    # ru-RU-SvetlanaNeural, ru-RU-DmitriNeural, 
+    # ru-RU-NataliaNeural, ru-RU-ElenaNeural, ru-RU-FilippNeural
+    voice: "ru-RU-SvetlanaNeural" 
+    rate: "+20%"
+    volume: "+0%"
+    
+  silero:
+    model_id: "v5_ru" #"v3_1_ru" 
+    speaker: "baya" # aidar, baya, kseniya, xenia, random
+    device: "cpu" # cuda
+
+exe:
+  exe_path: "src/bin/llama-server.exe"
+
+server:
+  host: "127.0.0.1"
+  port: 8080

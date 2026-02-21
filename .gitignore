@@ -21,6 +21,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+# Исполняемые файлы
+src/bin/*.exe
+src/bin/
+
 # Датасеты и большие файлы
 # data/
 # *.zip
@@ -72,8 +76,8 @@ tensorboard/
 .DS_Store
 Thumbs.db
 
-# uv (если используете)
-uv.lock
+# uv  
+# uv.lock
 
 # Jupyter
 .ipynb_checkpoints/
@@ -86,3 +90,6 @@ experiments/
 wandb/
 runs/
 lightning_logs/
+
+# Отладочные файлы faulthandler
+crash_report.txt
